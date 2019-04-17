@@ -46,35 +46,11 @@ public class EmployeeController {
 		return emp;
 	}
 
-//
-//	@RequestMapping("/addproj")
-//	public Set<Project> addProjectDetails() {
-//		
-//		
-//		Employee e1=new Employee(101,"akshata");
-//		Employee e2=new Employee(102,"mahi");
-//		Set<Employee> emp=new HashSet<Employee>();
-//		
-//		emp.add(e1);
-//		emp.add(e2);
-//	
-//		Project p1=new Project(11111, "AI",emp);
-//		Project p2=new Project(22222, "Networking",emp);
-//
-//		Set<Project> prj=new HashSet<Project>();
-//		prj.add(p1);
-//		prj.add(p2);
-//		
-//		serv.addProject(prj);
-//		
-//		return prj;
-//	}
-
-//	@RequestMapping("/get")
-//	public Employee getEmployeeDetails() {
-//		Employee employee = service.getEmployee(101);
-//		return employee;
-//	}
-//
+	@RequestMapping("/get")
+	public Employee geEmployeeDetails()
+	{
+		
+		return service.getEmployee(101);
+	}
 
 }

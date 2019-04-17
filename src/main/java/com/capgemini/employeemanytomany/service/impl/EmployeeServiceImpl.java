@@ -16,21 +16,20 @@ public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeDao dao;
 
 
-//
-//	@Override
-//	public Set<Employee> getEmployee(int id) {
-//
-//		Employee employee = dao.findById(id).get();
-//
-//		return employee;
-//	}
-
 	@Override
 	public Set<Employee> addEmployee(Set<Employee> employee) {
 		
 		dao.saveAll(employee);
 		return employee;
 		
+	}
+
+
+	@Override
+	public Employee getEmployee(int id) {
+		
+		Employee e=dao.findById(id).get();
+		return e;
 	}
 
 }
